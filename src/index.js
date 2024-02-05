@@ -4,7 +4,11 @@ addEventListener("fetch", (event) => {
 });
 
 const routes = {
-  "cloudflare-docker-proxy.zzlyzq.workers.dev": "https://registry-1.docker.io",
+  "docker.oplab.net": "https://registry-1.docker.io",
+  "quay.oplab.net": "https://quay.io",
+  "gcr.oplab.net": "https://k8s.gcr.io",
+  "k8s-gcr.oplab.net": "https://k8s.gcr.io",
+  "ghcr.oplab.net": "https://ghcr.io",
 };
 
 function routeByHosts(host) {
